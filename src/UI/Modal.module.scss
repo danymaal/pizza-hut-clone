@@ -1,0 +1,71 @@
+.disabled {
+  display: none;
+}
+
+.modal {
+  background: #fff;
+  border-radius: 10px;
+  height: 463px;
+  width: 670px;
+}
+
+.modal-content {
+padding: 30px;
+}
+
+.bike {
+  width: 100px;
+
+}
+
+.img {
+  //padding-top: 100px;
+  text-align: center;
+}
+
+.sorry-massage {
+  text-align: center;
+}
+
+.sorry {
+  font-size: 30px;
+  color: #313131;
+}
+
+.par {
+  text-align: center;
+
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+
+  .button1 {
+    padding: 10px 120px;
+    border: none;
+    border-radius: 5px;
+  }
+  .button2 {
+    padding: 14px 120px;
+    border: none;
+    border-radius: 5px;
+    background: #82b300;
+    color: #fff;
+
+    font-size: 14px;
+
+
+  }
+  .button1:hover {
+    background: #dcdcdc;
+  }
+
+
+  .button2:hover {
+    background: #77a301;
+  }
+
+
+}

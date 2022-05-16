@@ -1,0 +1,31 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap');
+
+.headerWrapper {
+  background: #fff;
+  padding: 10px 5px 0 5px;
+  border-bottom: 1px solid #e9ebee;
+
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  //margin: 5px 10px;
+
+
+  padding-bottom: 10px;
+}
+
+.button {
+  background: #c8102e;
+  color: white;
+  border-radius: 0.5rem;
+  width: 85px;
+  height: 2.5rem;
+  border: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  padding: 0px 10px;
+}
+
