@@ -1,6 +1,5 @@
 import classes from "./OnlineForm.module.scss";
 import { useState } from "react";
-import image from "../../assets/1.webp";
 import Modal from "../../UI/Modal";
 import { ModalContext } from "../../store/context";
 
@@ -8,6 +7,7 @@ const OnlineForm = () => {
   const [activeDel, setActiveDel] = useState(false);
   const [activeTake, setActiveTake] = useState(false);
   const [showModal, setShowModal] = useState(false);
+  const [input, setInput] = useState("");
 
   const activateDel = () => {
     setActiveDel(true);
@@ -26,8 +26,13 @@ const OnlineForm = () => {
     }
   };
 
+  const onInputChange = (e) => {
+    setInput(e.target.value);
+    console.log(e.target.value);
+  };
+
   return (
-    <ModalContext.Provider value={{ showModal, setShowModal }}>
+    <ModalContext.Provider value={{ showModal, setShowModal, activateTake }}>
       <div className={classes.wrapper}>
         <div className={classes.online}>
           <form onSubmit={submitHandler}>
@@ -57,10 +62,16 @@ const OnlineForm = () => {
                 type="text"
                 className={classes.location}
                 placeholder="Enter your address"
+                onChange={onInputChange}
+                value={input}
               />
             </div>
             <div className={classes.order}>
-              <button type="submit" className={classes.orderBtn}>
+              <button
+                type="submit"
+                className={`${classes.orderBtn} ${!input && classes.disabled}`}
+                disabled={!input}
+              >
                 Begin your order
               </button>
             </div>

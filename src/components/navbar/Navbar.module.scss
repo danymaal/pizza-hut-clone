@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
 
 .navbarWrapper {
   background: #fff;
@@ -24,9 +23,38 @@
 
 li {
   cursor: pointer;
+  &:hover {
+    color: #c8102e;
+
+  }
+}
+
+.menu-link {
+  text-decoration: none;
+  color: #c8102e;
 }
 
 h1 {
   font-size: 12px;
   margin-right: 15px;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cart {
+  text-decoration: none;
+  color: #000;
+}
+
+.cart-img {
+  width: 20px;
+}
+
+.cart-components {
+  display: flex;
+  align-items: center;
 }

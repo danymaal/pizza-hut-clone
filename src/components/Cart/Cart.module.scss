@@ -1,0 +1,29 @@
+.no-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 80px 0 0 0 ;
+}
+
+.no-items__heading {
+  font-size: 40px;
+}
+
+.no-items__menu {
+  display: flex;
+  justify-content: center;
+}
+
+.no-items__menu > * {
+  text-decoration: none;
+  color: #000000;
+  border: 1px solid #cccccc;
+  padding: 10px 20px;
+  border-radius: 10px;
+
+  &:hover {
+    color: #c8102e;
+  }
+}
+
+

@@ -1,23 +1,44 @@
-import classes from './Navbar.module.scss'
+import classes from "./Navbar.module.scss";
+import { images } from "../../UI/images";
+import { Link } from "react-router-dom";
+import { useContext } from "react";
+import CartContext from "../../store/context";
 
 const Navbar = () => {
-    return (
-        <div className={classes.navbarWrapper}>
-
-        <div className={classes.navbar}>
-            <div>
-                <ul className={classes.ulist}>
-                    <li className={classes.menu}><a>MENU</a></li>
-                    <li><a>RESTAURANTS</a>  </li>
-                    <li><a>SAFETY</a></li>
-                    <li>PIZZA HUT TAKEAWAY</li>
-                    <li>CONTACT</li>
-                </ul>
-            </div>
-    <h1>EN</h1>
+  const { cartItems } = useContext(CartContext);
+  return (
+    <div className={classes.navbarWrapper}>
+      <div className={classes.navbar}>
+        <div>
+          <ul className={classes.ulist}>
+            <li className={classes.menu}>
+              <Link className={classes["menu-link"]} to="/">
+                MENU
+              </Link>
+            </li>
+            <li>
+              <a>RESTAURANTS</a>{" "}
+            </li>
+            <li>
+              <a>SAFETY</a>
+            </li>
+            <li>PIZZA HUT TAKEAWAY</li>
+            <li>CONTACT</li>
+            <li></li>
+          </ul>
         </div>
+        <div className={classes["right-section"]}>
+          <div className={classes["cart-components"]}>
+            <img className={classes["cart-img"]} src={images.cart_img} alt="" />
+            <Link className={classes.cart} to="/cart">
+              Cart ({cartItems.length})
+            </Link>
+          </div>
+          <h1>EN</h1>
         </div>
-    )
-}
+      </div>
+    </div>
+  );
+};
 
-export default Navbar
+export default Navbar;

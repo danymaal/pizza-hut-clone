@@ -31,6 +31,10 @@ input[type = 'radio'] :focus + label {
   border-bottom: 3px solid #c8102e;
 }
 
+.disabled {
+  background: #c1da93 !important;
+}
+
 
 .online {
   display: flex;
@@ -69,6 +73,10 @@ input[type = 'radio'] :focus + label {
   border-radius: 3px;
 
   border: 0.5px solid #ccc;
+
+  &:focus {
+    outline: none;
+  }
 }
 
 .order {
