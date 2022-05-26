@@ -8,6 +8,7 @@ const BestesellerItem = ({
   src,
   onAddToCart,
   item,
+  id,
 }) => {
   return (
     <div className={classes.block}>
@@ -16,8 +17,8 @@ const BestesellerItem = ({
         <h3 className={classes.name}>{name}</h3>
         <p className={classes.description}>{description}</p>
         <div className={classes.bottom}>
-          <span className={classes.price}>{price}</span>
-          <Button onAddToCart={onAddToCart} item={item} />
+          <span className={classes.price}>{`${price} CZK`}</span>
+          <Button onAddToCart={onAddToCart} item={item} id={id} />
         </div>
       </div>
     </div>

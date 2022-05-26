@@ -17,10 +17,14 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <a>RESTAURANTS</a>{" "}
+              <a className={classes["dummy-link"]} href="#">
+                RESTAURANTS
+              </a>{" "}
             </li>
             <li>
-              <a>SAFETY</a>
+              <a className={classes["dummy-link"]} href="#">
+                SAFETY
+              </a>
             </li>
             <li>PIZZA HUT TAKEAWAY</li>
             <li>CONTACT</li>

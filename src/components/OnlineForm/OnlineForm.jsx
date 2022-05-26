@@ -21,7 +21,7 @@ const OnlineForm = () => {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    if (setActiveDel) {
+    if (activeDel) {
       setShowModal(true);
     }
   };
@@ -29,6 +29,10 @@ const OnlineForm = () => {
   const onInputChange = (e) => {
     setInput(e.target.value);
     console.log(e.target.value);
+  };
+
+  const buttonClicked = () => {
+    window.location = "/cart";
   };
 
   return (
@@ -71,6 +75,7 @@ const OnlineForm = () => {
                 type="submit"
                 className={`${classes.orderBtn} ${!input && classes.disabled}`}
                 disabled={!input}
+                onClick={activeTake && buttonClicked}
               >
                 Begin your order
               </button>
@@ -78,7 +83,7 @@ const OnlineForm = () => {
           </form>
           {showModal && (
             <div className={classes.modalAbs}>
-              <Modal />{" "}
+              <Modal />
             </div>
           )}
         </div>
