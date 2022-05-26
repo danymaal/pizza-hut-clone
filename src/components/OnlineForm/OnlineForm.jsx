@@ -1,13 +1,13 @@
-import classes from "./OnlineForm.module.scss";
-import { useState } from "react";
-import Modal from "../../UI/Modal";
-import { ModalContext } from "../../store/context";
+import classes from './OnlineForm.module.scss';
+import { useState } from 'react';
+import Modal from '../../UI/Modal';
+import { ModalContext } from '../../store/context';
 
 const OnlineForm = () => {
   const [activeDel, setActiveDel] = useState(false);
   const [activeTake, setActiveTake] = useState(false);
   const [showModal, setShowModal] = useState(false);
-  const [input, setInput] = useState("");
+  const [input, setInput] = useState('');
 
   const activateDel = () => {
     setActiveDel(true);
@@ -19,20 +19,20 @@ const OnlineForm = () => {
     setActiveDel(false);
   };
 
-  const submitHandler = (e) => {
+  const submitHandler = e => {
     e.preventDefault();
     if (activeDel) {
       setShowModal(true);
     }
   };
 
-  const onInputChange = (e) => {
+  const onInputChange = e => {
     setInput(e.target.value);
     console.log(e.target.value);
   };
 
   const buttonClicked = () => {
-    window.location = "/cart";
+    window.location = '/cart';
   };
 
   return (
@@ -46,7 +46,7 @@ const OnlineForm = () => {
                 className={`${classes.radioEl} ${activeDel && classes.active} `}
                 onClick={activateDel}
               >
-                <input type={"radio"} id="delivery" />
+                <input type={'radio'} id="delivery" />
                 <label htmlFor="delivery">
                   <div>Delivery</div>
                 </label>
@@ -57,7 +57,7 @@ const OnlineForm = () => {
                 } `}
                 onClick={activateTake}
               >
-                <input type={"radio"} id="takeaway" />
+                <input type={'radio'} id="takeaway" />
                 <label htmlFor="delivery">Takeaway</label>
               </div>
             </div>
@@ -75,7 +75,7 @@ const OnlineForm = () => {
                 type="submit"
                 className={`${classes.orderBtn} ${!input && classes.disabled}`}
                 disabled={!input}
-                onClick={activeTake && buttonClicked}
+                // onClick={activeTake && buttonClicked}
               >
                 Begin your order
               </button>

@@ -2,9 +2,9 @@
 
 body {
   margin: 0;
-  font-family:'Noto Sans',    -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Noto Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: #f4f4f4;
@@ -12,7 +12,7 @@ body {
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  monospace;
 }
 
 * {
@@ -21,4 +21,47 @@ code {
 
 button {
   cursor: pointer;
+}
+
+.title-bestseller {
+  text-align: center;
+  margin: 80px auto 30px auto;
+  max-width: 1000px;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+
+
+  h1 {
+    overflow: hidden;
+    text-align: center;
+    font-size: 25px;
+  }
+
+  h1:before,
+  h1:after {
+    background-color: #c8102e;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+  }
+
+  h1:before {
+    right: 0.5em;
+    margin-left: -50%;
+  }
+
+  h1:after {
+    left: 0.5em;
+    margin-right: -50%;
+  }
+
+  .heart-image {
+    width: 20px;
+    padding: 0 8px 0 0;
+    filter: invert(11%) sepia(81%) saturate(6726%) hue-rotate(346deg) brightness(86%) contrast(91%);
+  }
 }

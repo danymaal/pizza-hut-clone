@@ -1,6 +1,6 @@
-import classes from "./Header.module.scss";
-import image from "../../assets/logo.svg";
-import { Link } from "react-router-dom";
+import classes from './Header.module.scss';
+import image from '../../assets/logo.svg';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (

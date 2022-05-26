@@ -1,10 +1,10 @@
-import Header from "./components/header/Header";
+import Header from './components/header/Header';
 
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import HomePage from "./Pages/HomePage";
-import ErrorPage from "./Pages/ErrorPage";
-import Navbar from "./components/navbar/Navbar";
-import Cart from "./components/Cart/Cart";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import HomePage from './Pages/HomePage';
+import ErrorPage from './Pages/ErrorPage';
+import Navbar from './components/navbar/Navbar';
+import CartPage from './Pages/CartPage';
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="cart" element={<Cart />} />
+        <Route path="cart" element={<CartPage />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
     </Router>

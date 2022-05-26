@@ -1,14 +1,15 @@
 .backdrop {
-  background: rgba(0,0,0,0.4);
+  background: rgba(0, 0, 0, 0.4);
   height: 100vh;
   width: 100vw;
   position: fixed;
+  z-index: 1000;
   top: 0;
   left: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  }
+}
 
 .modal {
   background: #fff;
@@ -18,7 +19,7 @@
 }
 
 .modal-content {
-padding: 30px;
+  padding: 30px;
 }
 
 .bike {
@@ -55,6 +56,7 @@ padding: 30px;
     border: none;
     border-radius: 5px;
   }
+
   .button2 {
     padding: 14px 120px;
     border: none;
@@ -66,6 +68,7 @@ padding: 30px;
 
 
   }
+
   .button1:hover {
     background: #dcdcdc;
   }

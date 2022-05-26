@@ -23,6 +23,7 @@
 
 li {
   cursor: pointer;
+
   &:hover {
     color: #c8102e;
 
@@ -62,4 +63,9 @@ h1 {
 .dummy-link {
   text-decoration: none;
   color: #000000;
+
+  &:hover {
+    color: #c8102e;
+
+  }
 }

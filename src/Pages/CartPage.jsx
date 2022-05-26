@@ -1,12 +1,9 @@
-import Cart from "../components/Cart/Cart";
-import { useContext } from "react";
-import { CartContext } from "../store/context";
+import Cart from '../components/Cart/Cart';
 
 const CartPage = () => {
-  const { cartItems } = useContext(CartContext);
   return (
     <>
-      <Cart cartItems={cartItems} />
+      <Cart />
     </>
   );
 };
