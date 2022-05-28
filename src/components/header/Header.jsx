@@ -1,5 +1,5 @@
 import classes from './Header.module.scss';
-import image from '../../assets/logo.svg';
+import image from '../../assets/images/icons and socials/logo.svg';
 import { Link } from 'react-router-dom';
 
 const Header = () => {

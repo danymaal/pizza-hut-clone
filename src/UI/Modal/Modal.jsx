@@ -1,5 +1,5 @@
 import classes from './Modal.module.scss';
-import bike from '../../assets/bike.svg';
+import bike from '../../assets/images/icons and socials/bike.svg';
 import { useContext } from 'react';
 import { ModalContext } from '../../store/context';
 

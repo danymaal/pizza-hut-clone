@@ -5,25 +5,25 @@ import HomePage from './Pages/HomePage';
 import ErrorPage from './Pages/ErrorPage';
 import Navbar from './components/navbar/Navbar';
 import CartPage from './Pages/CartPage';
+import Footer from './components/Footer/Footer';
+import Checkout from './components/Checkout/Checkout/Checkout.jsx';
 
 function App() {
   return (
-    <Router>
-      <Header />
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="cart" element={<CartPage />} />
-        <Route path="*" element={<ErrorPage />} />
-      </Routes>
-    </Router>
+    <div>
+      <Router>
+        <Header />
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="cart" element={<CartPage />}></Route>
+          <Route path="checkout" element={<Checkout />} />
+          <Route path="*" element={<ErrorPage />} />
+        </Routes>
+        <Footer />
+      </Router>
+    </div>
   );
 }
 
 export default App;
-
-// todo: make a modal backdrop -- done
-// todo: log in form
-// todo: cart as a separate page -- done
-// todo: when on a modal user click yes he goes to takeaway enters address and when order button clicked it gets him to separate cart component -- done
-// todo: make cart quantity work as it should

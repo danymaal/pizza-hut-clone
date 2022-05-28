@@ -1,5 +1,5 @@
 import classes from './Navbar.module.scss';
-import { images } from '../../UI/images';
+import { images } from '../../assets/images';
 import { Link } from 'react-router-dom';
 import { useContext } from 'react';
 import CartContext from '../../store/context';
@@ -34,10 +34,10 @@ const Navbar = () => {
         </div>
         <div className={classes['right-section']}>
           <div className={classes['cart-components']}>
-            <img className={classes['cart-img']} src={images.cart_img} alt="" />
             <Link className={classes.cart} to="/cart">
               <div className={classes['cart-link']}>
-                <h3 className={classes['cart-h3']}>Cart</h3>
+                <img className={classes['cart-img']} src={images.bag} alt="" />
+                {/*<h3 className={classes['cart-h3']}>Cart</h3>*/}
                 <p
                   className={classes['cart-p']}
                 >{`${cartContext.items.length} items`}</p>
