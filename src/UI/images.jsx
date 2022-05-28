@@ -9,6 +9,11 @@ import img_6 from '../assets/2-2.jpeg';
 import img_7 from '../assets/2-3.jpeg';
 import img_8 from '../assets/2-4.jpeg';
 import heart from '../assets/heart.svg';
+import phone_banner from '../assets/phone-banner.webp';
+import appstore from '../assets/appstore.svg';
+import playstore from '../assets/playstore.svg';
+import facebook from '../assets/facebook.svg';
+import instagram from '../assets/instagram.svg';
 
 export const images = {
   cart_img: cart_img,
@@ -21,4 +26,9 @@ export const images = {
   img_7,
   img_8,
   heart,
+  phone_banner,
+  appstore,
+  playstore,
+  facebook,
+  instagram,
 };

@@ -69,3 +69,20 @@ h1 {
 
   }
 }
+
+.cart-link {
+  margin-left: 7px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-h3 {
+  margin: 0;
+}
+
+.cart-p {
+  margin: 0;
+  font-size: 12px;
+}

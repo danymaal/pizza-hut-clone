@@ -1,6 +1,6 @@
 import classes from './OnlineForm.module.scss';
 import { useState } from 'react';
-import Modal from '../../UI/Modal';
+import Modal from '../../UI/Modal/Modal';
 import { ModalContext } from '../../store/context';
 
 const OnlineForm = () => {

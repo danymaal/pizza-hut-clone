@@ -1,6 +1,6 @@
-import classes from "./Button.module.scss";
-import { useContext, useState } from "react";
-import CartContext from "../store/context";
+import classes from './Button.module.scss';
+import { useContext } from 'react';
+import CartContext from '../../store/context';
 
 const Button = ({ onAddToCart, item, disabled, id, isAddedToCart }) => {
   const { buttonTitle } = useContext(CartContext);

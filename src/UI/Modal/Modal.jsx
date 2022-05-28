@@ -1,7 +1,7 @@
-import classes from "./Modal.module.scss";
-import bike from "../assets/bike.svg";
-import { useContext } from "react";
-import { ModalContext } from "../store/context";
+import classes from './Modal.module.scss';
+import bike from '../../assets/bike.svg';
+import { useContext } from 'react';
+import { ModalContext } from '../../store/context';
 
 const Modal = () => {
   const { showModal, setShowModal, activateTake } = useContext(ModalContext);
@@ -18,11 +18,11 @@ const Modal = () => {
   return (
     <div className={classes.backdrop}>
       <div className={classes.modal}>
-        <div className={classes["modal-content"]}>
+        <div className={classes['modal-content']}>
           <div className={classes.img}>
             <img src={bike} alt="bike img" className={classes.bike} />
           </div>
-          <div className={classes["sorry-massage"]}>
+          <div className={classes['sorry-massage']}>
             <h1 className={classes.sorry}>
               WE ARE SORRY, BUT WE CANNOT DELIVER TO THIS ADDRESS
             </h1>
