@@ -6,6 +6,7 @@ import img_5 from './images/bestsellers/2-1.jpeg';
 import img_6 from './images/bestsellers/2-2.jpeg';
 import img_7 from './images/bestsellers/2-3.jpeg';
 import img_8 from './images/bestsellers/2-4.jpeg';
+
 import heart from './images/icons and socials/heart.svg';
 import phone_banner from './images/icons and socials/phone-banner.webp';
 import appstore from './images/icons and socials/appstore.svg';
@@ -14,6 +15,7 @@ import facebook from './images/icons and socials/facebook.svg';
 import instagram from './images/icons and socials/instagram.svg';
 import baked_pasta from './images/icons and socials/baked_pasta.svg';
 import cart_img from './images/icons and socials/cart.png';
+import clock from './images/icons and socials/clock.webp';
 
 import bp_1 from './images/baked pasta/1.png';
 import bp_2 from './images/baked pasta/2.png';
@@ -21,6 +23,11 @@ import bp_3 from './images/baked pasta/3.png';
 import bp_4 from './images/baked pasta/4.png';
 import bp_banner from './images/baked pasta/banner.webp';
 import bag from './images/icons and socials/bag.png';
+
+import credit_card from './images/icons and socials/credit card.svg';
+import google_pay from './images/icons and socials/google-pay.svg';
+import pickup from './images/icons and socials/pickup-payment.svg';
+import cash from './images/icons and socials/cash.svg';
 
 export const images = {
   cart_img: cart_img,
@@ -45,4 +52,9 @@ export const images = {
   bp_4,
   bp_banner,
   bag,
+  clock,
+  credit_card,
+  google_pay,
+  pickup,
+  cash,
 };
